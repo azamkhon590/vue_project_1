@@ -11,7 +11,7 @@ const router = createRouter({
       component: NewsListView
     },
     {
-      path: '/single',
+      path: '/:id',
       name: 'news_single',
       component: NewsSingleView
     }

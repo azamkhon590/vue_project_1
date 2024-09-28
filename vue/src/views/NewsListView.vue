@@ -1,56 +1,8 @@
 <script setup>
     import { ref } from 'vue';
+    import NewsData from '@/assets/mocData/NewsData.json'
 
-    const newsList = ref([
-        {
-            id: 1,
-            name: 'News 1',
-            short_content: 'info news 1',
-            content: 'info news 1',
-            image_url: '',
-            date: '2024-09-04'
-        },
-        {
-            id: 2,
-            name: 'News 2',
-            short_content: 'info news 2',
-            content: 'info news 2',
-            image_url: '',
-            date: '2024-09-04'
-        },
-        {
-            id: 3,
-            name: 'News 3',
-            short_content: 'info news 3',
-            content: 'info news 3',
-            image_url: '',
-            date: '2024-09-04'
-        },
-        {
-            id: 4,
-            name: 'News 4',
-            short_content: 'info news 4',
-            content: 'info news 4',
-            image_url: '',
-            date: '2024-09-04'
-        },
-        {
-            id: 5,
-            name: 'News 5',
-            short_content: 'info news 5',
-            content: 'info news 5',
-            image_url: '',
-            date: '2024-09-04'
-        },
-        {
-            id: 6,
-            name: 'News 6',
-            short_content: 'info news 6',
-            content: 'info news 6',
-            image_url: '',
-            date: '2024-09-04'
-        }
-    ]);
+    const newsList = ref(NewsData);
 </script>
 
 <template>
@@ -62,7 +14,8 @@
                     <h5 class="card-title">{{ news.name }}</h5>
                     <p class="card-text">{{ news.short_content }}</p>
                     <p class="card-text link-danger">{{ news.date }}</p>
-                    <a href="/single" class="btn btn-primary">Подробнее</a>
+                    <router-link class="btn btn-primary" :to="{name: 'news_single', params: {id: news.id}}">Подробнее</router-link>
+                    <!-- <a href="/single" class="btn btn-primary">Подробнее</a> -->
                 </div>
             </div>
         </div>
