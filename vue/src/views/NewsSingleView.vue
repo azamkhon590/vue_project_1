@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 const news = ref({
     id: null,
@@ -9,12 +10,12 @@ const news = ref({
     image_url: null,
     date: null
 });
-
+const route = useRoute();
 onMounted(async () => {
     try {
         const response = await fetch("src/assets/mocData/NewsData.json");
         const data = await response.json();
-        news.value = data.find((el) => el.id === 2);
+        news.value = data.find((el) => el.id === parseInt(route.params.id));
         console.log(news);
     } catch (error) {
         console.error("error", error);

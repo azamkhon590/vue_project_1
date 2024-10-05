@@ -8,7 +8,7 @@
 <template>
     <div class="row">
         <div class="col-md-3 mb-4" v-for="news in newsList" :key="news">
-            <div class="card">
+            <div class="card m-2">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt=":D">
                 <div class="card-body">
                     <h5 class="card-title">{{ news.name }}</h5>
