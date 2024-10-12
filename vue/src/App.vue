@@ -46,7 +46,21 @@ import { RouterLink, RouterView } from 'vue-router'
             </div>
         </nav>
     </Header>
-    <RouterView />
+    <section>
+        <RouterView />
+    </section>
+
+    <footer>
+        <div class="footer_nav">
+            <div class="nav_item">
+                <router-link class="" :to="{name: 'news_list'}">News</router-link>
+            </div>
+            <h2>News</h2>
+            <p></p>
+        </div>
+    </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

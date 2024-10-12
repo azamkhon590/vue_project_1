@@ -13,7 +13,7 @@ const news = ref({
 const route = useRoute();
 onMounted(async () => {
     try {
-        const response = await fetch("src/assets/mocData/NewsData.json");
+        const response = await fetch("/src/assets/mocData/NewsData.json");
         const data = await response.json();
         news.value = data.find((el) => el.id === parseInt(route.params.id));
         console.log(news);
