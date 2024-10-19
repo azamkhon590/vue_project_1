@@ -18,5 +18,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        \MoonShine\Models\MoonshineUser::query()->create([
+            "email" => "admin",
+            "name" => "admin",
+            "password" => bcrypt(123),
+        ]);
     }
 }
