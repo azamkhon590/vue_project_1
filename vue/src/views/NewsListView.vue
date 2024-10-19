@@ -15,7 +15,6 @@
                     <p class="card-text">{{ news.short_content }}</p>
                     <p class="card-text link-danger">{{ news.date }}</p>
                     <router-link class="btn btn-primary" :to="{name: 'news_single', params: {id: news.id}}">Подробнее</router-link>
-                    <!-- <a href="/single" class="btn btn-primary">Подробнее</a> -->
                 </div>
             </div>
         </div>

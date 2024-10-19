@@ -53,7 +53,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <footer>
         <div class="footer_nav">
             <div class="nav_item">
-                <router-link class="" :to="{name: 'news_list'}">News</router-link>
+                <router-link class="" :to="{ name: 'news_list' }">News</router-link>
             </div>
             <h2>News</h2>
             <p></p>
@@ -62,5 +62,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 </style>
