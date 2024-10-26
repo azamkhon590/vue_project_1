@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Mark",
+        "age": 23,
+        "object": "math",
+        "content": "teaher info"
+    },
+    {
+        "id": 2,
+        "name": "Masha",
+        "age": 25,
+        "object": "math",
+        "content": "teaher info"
+    },
+    {
+        "id": 3,
+        "name": "Ivan",
+        "age": 29,
+        "object": "geograty",
+        "content": "teaher info"
+    },
+    {
+        "id": 4,
+        "name": "Lena",
+        "age": 33,
+        "object": "biology",
+        "content": "teaher info"
+    }
+]

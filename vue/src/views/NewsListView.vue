@@ -1,11 +1,14 @@
 <script setup>
     import { ref } from 'vue';
-    import NewsData from '@/assets/mocData/NewsData.json'
+    import NewsData from '@/assets/mocData/NewsData.json';
 
     const newsList = ref(NewsData);
 </script>
 
 <template>
+    <div class="logo">
+        <h1 class="text-center">News</h1>
+    </div>
     <div class="row">
         <div class="col-md-3 mb-4" v-for="news in newsList" :key="news">
             <div class="card m-2">
