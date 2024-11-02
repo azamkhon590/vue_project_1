@@ -44,5 +44,6 @@ let teachers = ref(TeacherData);
 .image {
     width: 100%;
     height: 50%;
+    border-radius: 3px;
 }
 </style>

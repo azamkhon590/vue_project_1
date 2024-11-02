@@ -54,9 +54,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 "Новости",
                 new \App\MoonShine\Resources\NewsResource()
             ),
-            MenuItem::make('Documentation', 'https://moonshine-laravel.com/docs')
-                ->badge(fn() => 'Check')
-                ->blank(),
+            MenuItem::make(
+                "Категории",
+                new \App\MoonShine\Resources\CategoryResource()
+            ),
+            
         ];
     }
 

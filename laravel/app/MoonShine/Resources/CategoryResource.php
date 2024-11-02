@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\News;
 
 use MoonShine\Resources\ModelResource;
 use MoonShine\Decorations\Block;
@@ -19,16 +19,21 @@ use MoonShine\Fields\Field;
 use MoonShine\Fields\Relationships\HasOne;
 use MoonShine\Fields\Relationships\BelongsTo;
 use MoonShine\Components\MoonShineComponent;
-use MoonShine\Fields\Switcher; 
 
 /**
- * @extends ModelResource<News>
+ * @extends ModelResource<Category>
  */
-class NewsResource extends ModelResource
+class CategoryResource extends ModelResource
 {
-    protected string $model = News::class;
+    protected string $model = Category::class;
 
-    protected string $title = 'News';
+    protected string $title = 'Category';
+
+    protected bool $createInModel = true;
+
+    protected bool $editInModel = true;
+
+    protected bool $detailInModel = true;
 
     /**
      * @return list<MoonShineComponent|Field>
@@ -42,11 +47,6 @@ class NewsResource extends ModelResource
                 Slug::make("SeoName", "slug")
                     ->from("title")
                     ->unique(),
-                TinyMce::make("FullContent", "full_content")->required(),
-                Textarea::make("ShortContent", "short_content")->required(),
-                Image::make("Image", "preview_url")->dir("news"),
-                BelongsTo::make("Category", "category", fn($item)=> $item-> title)->required(),
-                Switcher::make("Status", "status"),
             ]),
         ];
     }
