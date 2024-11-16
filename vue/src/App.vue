@@ -47,4 +47,7 @@ import { RouterLink, RouterView } from 'vue-router'
     justify-content: space-between;
     align-items: center;
 }
+nav{
+    background-color: blueviolet;
+}
 </style>
