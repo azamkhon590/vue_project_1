@@ -12,7 +12,7 @@ const news = ref({
 
 onMounted(async () => {
     try {
-        const response = await fetch("src/assets/mocData/NewsData.json");
+        const response = await fetch("/src/assets/mocData/NewsData.json");
         const data = await response.json();
         news.value = data.find((el) => el.id === 2);
         console.log(news);
