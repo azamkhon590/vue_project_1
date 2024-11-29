@@ -3434,7 +3434,7 @@ h3 {
   content: '';
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/causes/2.png);
+  background-image: url("./program/4.png");
 }
 
 @media (max-width: 767px) {
