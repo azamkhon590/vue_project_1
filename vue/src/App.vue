@@ -1,5 +1,7 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+
+import { RouterLink, RouterView } from 'vue-router';
+
 </script>
 
 <template>
@@ -20,6 +22,7 @@ import { RouterLink, RouterView } from 'vue-router'
                         <li class="nav-item">
                             <router-link class="nav-link" :to="{ name: 'news_list' }">News</router-link>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -47,7 +50,8 @@ import { RouterLink, RouterView } from 'vue-router'
     justify-content: space-between;
     align-items: center;
 }
-nav{
+
+nav {
     background-color: blueviolet;
 }
 </style>
