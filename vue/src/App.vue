@@ -33,19 +33,14 @@ import { RouterLink, RouterView } from 'vue-router';
                                         </a>
                                     </div>
                                 </div>
-                                <div class="header_right d-flex align-items-center">
+                                <div class="d-flex align-items-center">
                                     <div class="main-menu d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">
-                                                <li><a href="index.html">home</a></li>
-                                                <li><a href="Courses.html">Courses</a></li>
-
-                                                <li><a href="#">pages</a>
-                                                    <ul class="submenu"></ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav>
+                                        <ul>
+                                            <li><a href="##">Home</a></li>
+                                            <li><a href="##">News</a></li>
+                                            <li><a href="##">Info</a></li>
+                                            <li><a href="##">Contact</a></li>
+                                        </ul>
                                     </div>
                                     <div class="Appointment">
                                         <div class="book_btn d-none d-lg-block">
@@ -136,13 +131,5 @@ import { RouterLink, RouterView } from 'vue-router';
 </template>
 
 <style scoped>
-.footer_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav {
-    background-color: blueviolet;
-}
 </style>
