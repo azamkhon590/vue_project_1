@@ -4,7 +4,7 @@
 
 <template>
         <div class="main_block d-flex gray_bg">
-        <div class="container justify-content-center">
+        <div class="justify-content-center">
             <div class="row">
                 <div class="col-lg-6 m-5">
                     <h3>University</h3>
@@ -13,12 +13,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-6">
             <img class="image" style="width: 100%;" src="./../assets/program/university.jpg" alt="">
         </div>
-
-
-
     </div>
     <div class="service_area gray_bg">
         <div class="container">
