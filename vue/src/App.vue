@@ -136,13 +136,5 @@ import { RouterLink, RouterView } from 'vue-router';
 </template>
 
 <style scoped>
-.footer_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav {
-    background-color: blueviolet;
-}
 </style>

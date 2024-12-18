@@ -3,6 +3,23 @@
 </script>
 
 <template>
+        <div class="main_block d-flex gray_bg">
+        <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 m-5">
+                    <h3>University</h3>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, quod nisi. Assumenda
+                        cupiditate nesciunt, animi minus nobis error aut qui illum molestiae mollitia eaque nulla?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <img class="image" style="width: 100%;" src="./../assets/program/university.jpg" alt="">
+        </div>
+
+
+
+    </div>
     <div class="service_area gray_bg">
         <div class="container">
             <div class="row justify-content-center ">
@@ -42,9 +59,7 @@
             </div>
         </div>
     </div>
-    <!--/ service_area_start  -->
 
-    <!-- popular_program_area_start  -->
     <div class="popular_program_area section__padding">
         <div class="container">
             <div class="row">
