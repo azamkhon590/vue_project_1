@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
     <header>
-        <div class="header-area ">
+        <div class="header-area">
             <div class="header-top_area">
                 <div class="container-fluid">
                     <div class="row">
@@ -15,7 +15,6 @@ import { RouterLink, RouterView } from 'vue-router';
                                 <div class="text_wrap">
                                     <p><span>+880166 253 232</span> <span>info@domain.com</span></p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
