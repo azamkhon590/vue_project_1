@@ -1,27 +1,29 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import axios from 'axios';
+import { ref, onMounted } from "vue";
+import NewsComponent from "@/component/NewsComponent.vue";
+import axios from "axios";
 
 const newsList = ref([]);
 const categoryList = ref([]);
 
 onMounted(async () => {
-    try {
-        const response = await axios.get("http://127.0.0.1:8000/api/news");
-        newsList.value = response.data.data;
+  try {
+    const response = await axios.get("http://127.0.0.1:8000/api/news");
+    newsList.value = response.data.data;
 
-        const category_response = await axios.get("http://127.0.0.1:8000/api/category");
-        categoryList.value = category_response.data.data;
+    const category_response = await axios.get("http://127.0.0.1:8000/api/category");
+    categoryList.value = category_response.data.data;
 
-        console.log(newsList.value);
-    } catch {
-
-    }
+    console.log(newsList.value);
+  } catch {
+    console.log("error");
+  }
 });
 </script>
 
 <template>
-    <div v-for="category in categoryList" :key="category" class="last-group">
+  <NewsComponent :newsListAll={newsList} :categoryListAll={categoryList} />
+  <!-- <div v-for="category in categoryList" :key="category" class="last-group">
         <button type="button" class="list-group-item list-group-item-active">{{ category.title }}</button>
     </div>
     <div class="logo">
@@ -49,7 +51,7 @@ onMounted(async () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <style scoped></style>
