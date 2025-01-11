@@ -21,6 +21,7 @@ onMounted(async () => {
 </script>
 
 <template>
+    <!-- <NewsComponent :newsListAll={{newsList}} :categoryListAll={{categoryList}}/> -->
     <div v-for="category in categoryList" :key="category" class="last-group">
         <button type="button" class="list-group-item list-group-item-active">{{ category.title }}</button>
     </div>
