@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <CounterComponent :startValue="0" :endValue="1000" :duration="3000" text_value="Counter" backgraund="red" text_color="black"/>
+    <!-- <CounterComponent :startValue="0" :endValue="1000" :duration="3000" text_value="Counter" backgraund="red" text_color="black"/> -->
     
     <div class="main_block d-flex gray_bg">
         <div class="container justify-content-center">
@@ -126,7 +126,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="row">
