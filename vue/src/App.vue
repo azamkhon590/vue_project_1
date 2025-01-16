@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from "vue-router";
                 class="header_top_wrap d-flex justify-content-between align-items-center"
               >
                 <div class="text_wrap">
-                  <p><span>+880166 253 232</span> <span>info@domain.com</span></p>
+                  <p><span>+880166 253 232</span></p>
                 </div>
               </div>
             </div>
