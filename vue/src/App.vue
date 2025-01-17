@@ -34,13 +34,9 @@ import { RouterLink, RouterView } from "vue-router";
                   <div class="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="Courses.html">Courses</a></li>
-
-                        <li>
-                          <a href="#">pages</a>
-                          <ul class="submenu"></ul>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Courses.html">News</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                       </ul>
                     </nav>
