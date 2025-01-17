@@ -9,7 +9,7 @@
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum inventore nihil nam placeat ratione distinctio molestiae id! Impedit et voluptatum ratione. Cum voluptatum quasi cupiditate dolore, velit, qui rem consequatur enim veniam eaque, hic omnis! In voluptatibus iusto magnam voluptates. Obcaecati unde ullam hic, fuga ipsum commodi tempora deleniti ab.
             </p>
-            <img class="image" src="./../assets/Photo/university.jpg" alt="">
+            <img class="image" style="width: 100%;"  src="./../assets/program/university.jpg" alt="">
         </div>
     </section>
     <section>

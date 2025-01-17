@@ -8,11 +8,15 @@
         <div class="contact_block">
             <div class="contact_info col-6">
                 <div class="contact_item">
-                    Phone - +7 987 654 32 10
+                    <h4>Phone</h4> +7 987 654 32 10
                 </div>
                 <hr>
                 <div class="contact_item">
-                    Mail - info@mail.com
+                    <h4>Mail</h4> info@mail.com
+                </div>
+                <hr>
+                <div class="contact_item">
+                    <h4>Adress</h4> 123 street
                 </div>
                 <hr>
             </div>
@@ -29,7 +33,9 @@
     }
     .contact_block{
         display: flex;
+        z-index: 5;
+        background-color: rgba(224, 223, 223, 0.897);
         padding: 30px 100px;
-        margin: 15px;
+        margin: 25px;
     }
 </style>
