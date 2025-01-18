@@ -1,4 +1,20 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+
+const contact = ref();
+
+onMounted(async () => {
+    try {
+        const response = await axios.get("http://127.0.0.1:8000/api/contact");
+        contact.value = response.data.data;
+
+        console.log(contact.value);
+    } catch {
+
+    }
+});
+</script>
 
 <template>
     <section>
@@ -8,7 +24,7 @@
         <div class="contact_block">
             <div class="contact_info col-6">
                 <div class="contact_item">
-                    <h4>Phone</h4> +7 987 654 32 10
+                    <h4>Phone</h4> {{ contact.phone }} +7 987 654 32 10
                 </div>
                 <hr>
                 <div class="contact_item">

@@ -58,6 +58,10 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 "Категории",
                 new \App\MoonShine\Resources\CategoryResource()
             ),
+            MenuItem::make(
+                "Контакты",
+                new \App\MoonShine\Resources\ContactResource()
+            ),
             
         ];
     }
