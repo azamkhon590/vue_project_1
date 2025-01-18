@@ -19,8 +19,8 @@ const router = createRouter({
       component: NewsSingleView
     },
     {
-      path: '/info',
-      name: 'information',
+      path: '/about',
+      name: 'about',
       component: InfoPageView
     },
     {
