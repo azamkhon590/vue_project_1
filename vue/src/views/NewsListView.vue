@@ -1,13 +1,10 @@
 <script setup>
-<<<<<<< HEAD
 import { ref, onMounted } from "vue";
 import NewsComponent from "@/component/NewsComponent.vue";
 import axios from "axios";
-=======
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import NewsComponent from '@/components/NewsComponent.vue';
->>>>>>> bdb391a71f42818524171989696975370435a2ba
 
 const newsList = ref([]);
 const categoryList = ref([]);
@@ -28,13 +25,7 @@ onMounted(async () => {
 </script>
 
 <template>
-<<<<<<< HEAD
-  <!-- <NewsComponent /> -->
-  <div v-for="category in categoryList" :key="category" class="last-group">
-=======
-    <!-- <NewsComponent :newsListAll={newsList} , :categoryListAll={categoryList}></NewsComponent> -->
     <div v-for="category in categoryList" :key="category" class="last-group">
->>>>>>> bdb391a71f42818524171989696975370435a2ba
         <button type="button" class="list-group-item list-group-item-active">{{ category.title }}</button>
     </div>
     <div class="logo">

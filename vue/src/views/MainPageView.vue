@@ -1,41 +1,5 @@
-<<<<<<< HEAD
-<script setup></script>
 
-<template>
-  <div class="main_block d-flex gray_bg">
-    <div class="justify-content-center">
-      <div class="row">
-        <div class="col-lg-6 m-5">
-          <h3>University</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, quod
-            nisi. Assumenda cupiditate nesciunt, animi minus nobis error aut qui illum
-            molestiae mollitia eaque nulla?
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <img
-        class="image"
-        style="width: 100%"
-        src="./../assets/program/university.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-  <div class="service_area gray_bg">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6">
-          <div class="single_service d-flex align-items-center">
-            <div class="service_info">
-              <h4>Scholarship</h4>
-              <p>Available</p>
-=======
-<script setup>
-    import CounterComponent from '@/components/CounterComponent.vue';
-</script>
+<script setup></script>
 
 <template>
     <!-- <CounterComponent :startValue="0" :endValue="1000" :duration="3000" text_value="Counter" backgraund="red" text_color="black"/> -->
@@ -169,17 +133,16 @@
                         <a href="##" class="boxed-btn4">View All course</a>
                     </div>
                 </div>
->>>>>>> bdb391a71f42818524171989696975370435a2ba
             </div>
           </div>
         </div>
-<<<<<<< HEAD
+
         <div class="col-lg-4 col-md-6">
           <div class="single_service d-flex align-items-center">
             <div class="service_info">
               <h4>Scholarship</h4>
               <p>Available</p>
-=======
+              </div>
     </div>
     <div class="latest_coures_area">
         <div class="latest_coures_inner">
@@ -283,13 +246,12 @@
                         </div>
                     </div>
                 </div>
->>>>>>> bdb391a71f42818524171989696975370435a2ba
+
             </div>
           </div>
         </div>
       </div>
     </div>
-<<<<<<< HEAD
   </div>
 
   <div class="popular_program_area section__padding">
@@ -299,8 +261,8 @@
           <div class="section_title text-center">
             <h3>Popular Program</h3>
           </div>
-=======
-
+      </div>
+      </div>
     <div class="recent_news_area section__padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -356,7 +318,6 @@
                     </div>
                 </div>
             </div>
->>>>>>> bdb391a71f42818524171989696975370435a2ba
         </div>
       </div>
       <div class="row">
