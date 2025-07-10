@@ -3,6 +3,10 @@ import NewsListView from '@/views/NewsListView.vue';
 import NewsSingleView from '@/views/NewsSingleView.vue';
 import MainPageView from '@/views/MainPageView.vue';
 import InfoPageView from '@/views/InfoPageView.vue';
+<<<<<<< HEAD
+=======
+import ContactPageView from '@/views/ContactPageView.vue';
+>>>>>>> bdb391a71f42818524171989696975370435a2ba
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +27,14 @@ const router = createRouter({
       component: InfoPageView
     },
     {
+<<<<<<< HEAD
+=======
+      path: '/contact',
+      name: 'contact',
+      component: ContactPageView
+    },
+    {
+>>>>>>> bdb391a71f42818524171989696975370435a2ba
       path: '/',
       name: 'main',
       component: MainPageView
