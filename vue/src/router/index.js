@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 import NewsListView from '@/views/NewsListView.vue';
 import NewsSingleView from '@/views/NewsSingleView.vue';
 import MainPageView from '@/views/MainPageView.vue';
-import ContactPageView from '@/views/ContactPageView.vue';
 import InfoPageView from '@/views/InfoPageView.vue';
 
 const router = createRouter({
@@ -17,11 +16,6 @@ const router = createRouter({
       path: '/news/:id',
       name: 'news_single',
       component: NewsSingleView
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: ContactPageView
     },
     {
       path: '/about',
